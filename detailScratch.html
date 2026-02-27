@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Đánh Giá 4 Buổi - Scratch</title>
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h3>TIÊU CHÍ ĐÁNH GIÁ NĂNG LỰC LỘ TRÌNH HỌC THỬ <br> SCRATCH</h3>
+  </div>
+
+  <!-- M1 M2 M3 + THÔNG TIN -->
+  <div class="top-section">
+    <div class="criteria-box">
+      <div><strong>M1</strong> → “Hiện tại con cần được đồng hành sát sao hơn”</div>
+      <div><strong>M2</strong> → “Con có thể hoàn thành với sự gợi mở từ giáo viên”</div>
+      <div><strong>M3</strong> → “Con có sự chủ động và thực hiện khá tốt trong hoạt động này”</div>
+    </div>
+
+    <div class="info-box">
+      <div><strong>Học viên: </strong><span id="hocVien"></span></div>
+      <div><strong>Lớp: </strong><span id="lop"></span></div>
+      <div><strong>Giáo viên: </strong><span id="giaoVien"></span></div>
+    </div>
+  </div>
+
+  <!-- BUỔI 1 -->
+  <div class="session-block" id="session-1">
+    <div class="lesson-title">Buổi 1: Thái Độ Học Tập</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col1">Nhóm năng lực</th>
+          <th class="col2">Tiêu chí quan sát</th>
+          <th class="colSmall">M1</th>
+          <th class="colSmall">M2</th>
+          <th class="colSmall">M3</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- THÁI ĐỘ HỌC -->
+        <tr>
+          <td rowspan="3" class="group">Thái độ học</td>
+          <td>Sẵn sàng tham gia hoạt động làm quen với lập trình</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Không e ngại khi thử thao tác với giao diện Scratch</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Thể hiện sự tò mò với nhân vật, khối lệnh</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block1_tc3" data-level="M3"></td>
+        </tr>
+
+        <!-- GIAO TIẾP -->
+        <tr>
+          <td rowspan="3" class="group">Giao tiếp</td>
+          <td>Dám mô tả điều mình muốn nhân vật làm</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết đặt câu hỏi khi chưa hiểu thao tác</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Lắng nghe hướng dẫn về cách kéo – ghép khối lệnh</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block2_tc3" data-level="M3"></td>
+        </tr>
+
+        <!-- CÔNG NGHỆ -->
+        <tr>
+          <td rowspan="4" class="group">Công nghệ</td>
+          <td>Nhận biết khu vực chính trong Scratch (nhân vật, sân khấu, khối lệnh)</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Chủ động lập trình các nhân vật khi xem sản phẩm mẫu</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết thử nghiệm ghép nhiều khối lệnh để tạo hiệu ứng theo ý tưởng cá nhân</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc3" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết chạy thử chương trình - quan sát kết quả và cải tiến chương trình</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc4" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc4" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="1" data-block="block3_tc4" data-level="M3"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="session-comment">
+      <div class="comment-block">
+        <div class="comment-title">Nhận xét chung từ giáo viên</div>
+        <div class="comment-content" id="session1-general"></div>
+      </div>
+
+      <div class="comment-block">
+        <div class="comment-title">Điểm nổi bật của học sinh</div>
+        <div class="comment-content" id="session1-highlight"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUỔI 2 -->
+  <div class="session-block" id="session-2">
+    <div class="lesson-title">Buổi 2: Năng Lực Lập Trình</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col1">Nhóm năng lực</th>
+          <th class="col2">Tiêu chí quan sát</th>
+          <th class="colSmall">M1</th>
+          <th class="colSmall">M2</th>
+          <th class="colSmall">M3</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- TƯ DUY LOGIC -->
+        <tr>
+          <td rowspan="3" class="group">Tư duy logic</td>
+          <td>Hiểu mối quan hệ giữa khối lệnh và hành động nhân vật</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết sắp xếp lệnh theo trình tự hợp lý</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Nhận ra nếu đổi thứ tự lệnh thì kết quả thay đổi</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block1_tc3" data-level="M3"></td>
+        </tr>
+
+        <!-- GIẢI QUYẾT VẤN ĐỀ -->
+        <tr>
+          <td rowspan="4" class="group">Giải quyết vấn đề</td>
+          <td>Thử nhiều cách khác nhau để đạt cùng mục tiêu</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Nhận biết lỗi khi chương trình không chạy đúng</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết kiểm tra lại chương trình sau mỗi lần chỉnh sửa</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc3" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Không lặp lại cùng một lỗi sau khi được gợi ý</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc4" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc4" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block2_tc4" data-level="M3"></td>
+        </tr>
+
+        <!-- THÁI ĐỘ KHI LẬP TRÌNH -->
+        <tr>
+          <td rowspan="3" class="group">Thái độ khi lập trình</td>
+          <td>Kiên trì thử lại khi chương trình chưa đúng</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Không bỏ cuộc khi gặp lỗi</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Giữ bình tĩnh và tiếp tục tìm cách sửa</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="2" data-block="block3_tc3" data-level="M3"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="session-comment">
+      <div class="comment-block">
+        <div class="comment-title">Nhận xét chung từ giáo viên</div>
+        <div class="comment-content" id="session2-general"></div>
+      </div>
+
+      <div class="comment-block">
+        <div class="comment-title">Điểm nổi bật của học sinh</div>
+        <div class="comment-content" id="session2-highlight"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUỔI 3 -->
+  <div class="session-block" id="session-3">
+    <div class="lesson-title">Buổi 3: Khả Năng Hợp Tác</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col1">Nhóm năng lực</th>
+          <th class="col2">Tiêu chí quan sát</th>
+          <th class="colSmall">M1</th>
+          <th class="colSmall">M2</th>
+          <th class="colSmall">M3</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- HỢP TÁC -->
+        <tr>
+          <td rowspan="3" class="group">Hợp tác</td>
+          <td>Cùng bạn thống nhất ý tưởng cho sản phẩm</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Chia vai: người lên ý tưởng – người thao tác – người kiểm tra</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Phối hợp để hoàn thành sản phẩm chung</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block1_tc3" data-level="M3"></td>
+        </tr>
+
+        <!-- GIAO TIẾP -->
+        <tr>
+          <td rowspan="4" class="group">Giao tiếp</td>
+          <td>Trao đổi rõ ràng về cách nhân vật hoạt động</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết giải thích khối lệnh mình đang dùng</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết hỏi lại khi chưa hiểu yêu cầu hoặc khối lệnh</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc3" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Lắng nghe và điều chỉnh theo góp ý của bạn</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc4" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc4" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block2_tc4" data-level="M3"></td>
+        </tr>
+
+        <!-- ỨNG XỬ -->
+        <tr>
+          <td rowspan="3" class="group">Ứng xử</td>
+          <td>Phản hồi tích cực khi chương trình bị góp ý</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Chấp nhận thay đổi ý tưởng khi cần</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Tôn trọng ý kiến của người khác</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="3" data-block="block3_tc3" data-level="M3"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="session-comment">
+      <div class="comment-block">
+        <div class="comment-title">Nhận xét chung từ giáo viên</div>
+        <div class="comment-content" id="session3-general"></div>
+      </div>
+
+      <div class="comment-block">
+        <div class="comment-title">Điểm nổi bật của học sinh</div>
+        <div class="comment-content" id="session3-highlight"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUỔI 4 -->
+  <div class="session-block" id="session-4">
+    <div class="lesson-title">Buổi 4: Sáng Tạo & Trình Bày</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col1">Nhóm năng lực</th>
+          <th class="col2">Tiêu chí quan sát</th>
+          <th class="colSmall">M1</th>
+          <th class="colSmall">M2</th>
+          <th class="colSmall">M3</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- SÁNG TẠO -->
+        <tr>
+          <td rowspan="4" class="group">Sáng tạo</td>
+          <td>Có ý tưởng riêng cho sản phẩm Scratch</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Biết kết hợp nhiều khối lệnh đã học</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Thử thêm hiệu ứng, hành động để chương trình sinh động hơn</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc3" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Sáng tạo lập trình theo ý tưởng cá nhân</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc4" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc4" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block1_tc4" data-level="M3"></td>
+        </tr>
+
+        <!-- TỰ CHỦ -->
+        <tr>
+          <td rowspan="3" class="group">Tự chủ</td>
+          <td>Chủ động xây dựng chương trình theo ý tưởng</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Tự kiểm tra và chỉnh sửa chương trình</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Ít phụ thuộc vào hướng dẫn trực tiếp</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block2_tc3" data-level="M3"></td>
+        </tr>
+
+        <!-- TRÌNH BÀY -->
+        <tr>
+          <td rowspan="3" class="group">Trình bày</td>
+          <td>Giải thích được chương trình của mình</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc1" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc1" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc1" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Mô tả logic hoạt động của nhân vật</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc2" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc2" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc2" data-level="M3"></td>
+        </tr>
+
+        <tr>
+          <td>Tự tin giới thiệu sản phẩm trước lớp</td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc3" data-level="M1"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc3" data-level="M2"></td>
+          <td class="colSmall"><input type="checkbox" class="readonly-checkbox" data-session="4" data-block="block3_tc3" data-level="M3"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="session-comment">
+      <div class="comment-block">
+        <div class="comment-title">Nhận xét chung từ giáo viên</div>
+        <div class="comment-content" id="session4-general"></div>
+      </div>
+
+      <div class="comment-block">
+        <div class="comment-title">Điểm nổi bật của học sinh</div>
+        <div class="comment-content" id="session4-highlight"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/details.js"></script>
+</body>
+</html>

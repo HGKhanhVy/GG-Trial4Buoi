@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Phiếu Chia Sẻ Trải Nghiệm - Coding">
+    <title>Phiếu Chia Sẻ Trải Nghiệm - Coding</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coding.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/common-buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/pdfManager.js" defer></script>
+    <script src="js/preview.js" defer></script>
+    <script src="js/chart.js" defer></script>
+</head>
+<body>
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <div>Đang xử lý...</div>
+        </div>
+    </div>
+
+    <div class="container" id="codingK12Form">
+        <div class="header">
+            <div class="logo">
+                <img src="img/[Logo] GearGen - Blue Trans.png" alt="GearGen Logo">
+            </div>
+            <div class="title">
+                <h1>PHIẾU ĐÁNH GIÁ TRẢI NGHIỆM <br> CODING</h1>
+            </div>
+        </div>
+        <!-- THÔNG TIN HỌC VIÊN -->
+        <div class="section" id="studentInfoSection">
+            <h2>A. THÔNG TIN HỌC VIÊN</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="hoTen">Tên học viên:</label>
+                    <input type="text" id="hoTen" name="hoTen">
+                </div>
+                <div class="form-group">
+                    <label for="tuoiLop">Lớp:</label>
+                    <input type="text" id="tuoiLop" name="tuoiLop">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="monTraiNghiem">Môn trải nghiệm:</label>
+                    <select id="monTraiNghiem" name="monTraiNghiem" class="input-line">
+                        <option value="" selected disabled>-- Chọn môn --</option>
+                        <option value="Scratch">Scratch</option>
+                        <option value="GameMaker">GameMaker</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ngayTraiNghiem">Ngày trải nghiệm:</label>
+                    <input type="date" id="ngayTraiNghiem" name="ngayTraiNghiem">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="giaoVien">Giáo viên hướng dẫn:</label>
+                    <input type="text" id="giaoVien" name="giaoVien">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CÁC TAB BUỔI -->
+        <hr class="pdf-hide" class="line-strong" />
+            <div class="session-tabs" id="sessionTabs"></div>
+        <hr class="pdf-hide" class="line-strong" />
+
+        <div id="tabContents"></div>        
+
+        <div class="actions">
+            <button id="btnSaveStudent" class="btn-shadow btn-primary">Lưu Thông Tin</button>
+            <button id="exportPdfBtn" class="btn-shadow btn-primary">Xuất bản PDF</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>TRUNG TÂM CÔNG NGHỆ GEARGEN</p>
+    </footer>
+
+    <!-- Preview Modal -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="previewContent"></div>
+        </div>
+    </div>
+    
+    <script type="module" src="./js/coding.js"></script>
+    <script src="./js/autoComment.js"></script>
+    <script src="./js/exportCodingPdf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

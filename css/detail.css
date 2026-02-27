@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+body {
+  padding: 30px;
+}
+
+.header {
+  background: linear-gradient(135deg, #0d3b66, #154c8a);
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  border-radius: 10px 10px 0 0;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* chia đều 2 cột */
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.criteria-box,
+.info-box {
+  background: #f9fafb;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.info-box div {
+  padding: 6px 0;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.info-box div:last-child {
+  border-bottom: none;
+}
+
+.lesson-title {
+  margin-top: 8px;
+  background: linear-gradient(135deg, #1d5fa7, #2563eb);
+  color: white;
+  padding: 12px 18px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+th {
+  background: #1f3c88;
+  color: white;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 1px 10px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.group {
+  background: #f3f4f6;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.col1 {
+  width: 18%;
+}
+
+.col2 {
+  width: 52%;
+}
+
+.colSmall {
+  width: 10%;
+  text-align: center;      
+  vertical-align: middle;  
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: default;
+}
+
+.readonly-checkbox {
+  pointer-events: none;   
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+  transition: 0.2s ease;
+}
+
+.session-comment {
+  padding: 10px;
+  background: #f8f9fc;
+  border-radius: 8px;
+}
+
+.comment-block {
+  margin-bottom: 5px;
+}
+
+.comment-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+.comment-content {
+  min-height: 24px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e0e6f0;
+}
+
+@media print {
+  table, .criteria-table {
+    page-break-inside: avoid;
+  }
+}

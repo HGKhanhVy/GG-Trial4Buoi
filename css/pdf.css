@@ -1,0 +1,56 @@
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 0 auto;
+        background: white;
+        box-sizing: border-box;
+        transform: scale(0.8);
+        transform-origin: top left;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        border: 1px solid #ddd !important;
+        padding: 5px !important;
+        background: white !important;
+    }
+
+    input, textarea {
+        border: none !important;
+    }
+
+    input[type="radio"]:checked + span {
+        background-color: #4CAF50 !important;
+        color: white !important;
+        font-weight: bold;
+    }
+
+    .checkbox:checked {
+        background-color: #4CAF50 !important;
+    }
+
+    .actions, 
+    .nav-back, 
+    .footer {
+        display: none !important;
+    }
+
+    .rating-table,
+    .info-table,
+    .evaluation-table {
+        page-break-inside: avoid;
+        margin-bottom: 10mm;
+    }
+
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+}
