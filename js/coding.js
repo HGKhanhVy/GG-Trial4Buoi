@@ -693,7 +693,7 @@ async function createStudentAndSave() {
 
   alert("Đã lưu học sinh!");
 
-  window.location.href = `teacher.html`;
+  window.location.href = `index.html`;
 }
 
 async function updateStudentAndSave(studentId) {
@@ -717,7 +717,7 @@ async function updateStudentAndSave(studentId) {
   });
 
   alert("Đã cập nhật tiến trình học sinh!");
-  window.location.href = `teacher.html`;
+  window.location.href = `index.html`;
 }
 
 // ================== LOAD STUDENT ==================

@@ -36,7 +36,7 @@ btnGoogle.addEventListener("click", async () => {
       { merge: true }
     );
 
-    window.location.href = "teacher.html";
+    window.location.href = "index.html";
   } catch (err) {
     console.error(err);
     alert("Đăng nhập thất bại. Vui lòng thử lại!");
