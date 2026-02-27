@@ -272,9 +272,9 @@ async function exportDetailPage(pdf) {
   let detailUrl = "";
 
   if (subject === "Scratch") {
-    detailUrl = "detailScratch.html";
+    detailUrl = "./detailScratch.html";
   } else if (subject === "GameMaker") {
-    detailUrl = "detailGameMaker.html";
+    detailUrl = "./detailGameMaker.html";
   } else {
     return;
   }

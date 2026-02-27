@@ -418,9 +418,9 @@ function renderSessionContent(subjectKey) {
         let targetPage = "";
 
         if (mon === "Scratch") {
-          targetPage = "detailScratch.html";
+          targetPage = "./detailScratch.html";
         } else if (mon === "GameMaker") {
-          targetPage = "detailGameMaker.html";
+          targetPage = "./detailGameMaker.html";
         } else {
           alert("Môn không hợp lệ.");
           return;
@@ -693,7 +693,7 @@ async function createStudentAndSave() {
 
   alert("Đã lưu học sinh!");
 
-  window.location.href = `index.html`;
+  window.location.href = `./index.html`;
 }
 
 async function updateStudentAndSave(studentId) {
@@ -717,7 +717,7 @@ async function updateStudentAndSave(studentId) {
   });
 
   alert("Đã cập nhật tiến trình học sinh!");
-  window.location.href = `index.html`;
+  window.location.href = `./index.html`;
 }
 
 // ================== LOAD STUDENT ==================
@@ -888,7 +888,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (btn) {
     btn.addEventListener("click", function () {
-      window.location.href = "detail.html";
+      window.location.href = "./detail.html";
     });
   }
 });

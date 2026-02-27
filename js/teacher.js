@@ -152,7 +152,7 @@ async function generateStudentId() {
 
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.href = "google.html";
+    window.location.href = "./google.html";
     return;
   }
 
@@ -176,7 +176,7 @@ onAuthStateChanged(auth, async (user) => {
 // ======== LOGOUT ==========
 btnLogout.addEventListener("click", async () => {
   await signOut(auth);
-  window.location.href = "google.html";
+  window.location.href = "./google.html";
 });
 
 // ====== CLASSES ======= 
@@ -464,7 +464,7 @@ function renderStudentsInModal() {
 
 function openCoding(classId, studentId) {
   window.location.href =
-    `coding.html?classId=${encodeURIComponent(classId)}&studentId=${encodeURIComponent(studentId)}`;
+    `./coding.html?classId=${encodeURIComponent(classId)}&studentId=${encodeURIComponent(studentId)}`;
 }
 
 btnToggleCreateStudent.addEventListener("click", () => {
