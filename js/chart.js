@@ -80,10 +80,13 @@ function buildSummaryData() {
 
         const CoreGrowth = GrowthSpace * PGI * k;
 
-        const FloorGrowth = f * (CurrentScore / 10);
+        const FloorGrowth = f * (CurrentScore / 4);
 
-        let TargetScore = CurrentScore + CoreGrowth + FloorGrowth;
-        TargetScore = clamp(TargetScore, 0, 10);
+        let RawTarget = CurrentScore + CoreGrowth + FloorGrowth;
+        let MaxGrowth = 4 - (CurrentScore / 5);;
+
+        let TargetScore = Math.min(RawTarget, CurrentScore + MaxGrowth);
+        TargetScore = clamp(TargetScore, 0, Infinity);
         TargetScore = Math.round(TargetScore * 1000) / 1000;
 
         return TargetScore;
@@ -224,13 +227,13 @@ function renderSummaryChart() {
             },
             y: {
             min: 0,
-            max: 10,
+            max: 12.5,
             ticks: {
                 stepSize: 2.5,
                 callback: function (value) {
                 const map = {
                     0: "",
-                    2.5: "Chưa thể hiện rõ",
+                    2.5: "Đang khám phá",
                     5: "Đang hình thành",
                     7.5: "Thể hiện ổn định",
                     10: "Nổi bật"
